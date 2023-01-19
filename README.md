@@ -20,3 +20,16 @@
 - More vague categories may result in easier questions
 - Hyper-specific questions may result in less in-depth questions
 - Be aware that the idea of Jeopardy is to have increasingly difficult questions as the point value gets higher, but ChatGPT is hit-or-miss when it comes to scaling difficulty of the questions. ie the 1000 point question may be easier than the 200 point question.
+
+## Home screen
+![quizgpt home page](https://user-images.githubusercontent.com/34074169/213581506-53528fc3-17cf-402c-ac48-854dd634d02c.PNG)
+
+## Game screen
+![quizgpt game screen initial](https://user-images.githubusercontent.com/34074169/213581550-e2bb0af8-36bd-46ed-838a-5e788a638e4e.PNG)
+![quizgpt half done board](https://user-images.githubusercontent.com/34074169/213581579-becd7e54-654c-4572-8004-a375cdab191c.PNG)
+
+## Question screen
+![quizgpt question screen](https://user-images.githubusercontent.com/34074169/213581686-0f52aa5c-8e30-4b3b-a46e-45e9cae50b43.PNG)
+
+## Leaderboard
+![image](https://user-images.githubusercontent.com/34074169/213581444-f22a316e-061b-436c-bd18-6133e7d05c35.png)
