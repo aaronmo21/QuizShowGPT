@@ -24,6 +24,7 @@
 ## Other notes / improvements
 - Consolidate styling
 - Improve file structure
+- Database functionality (models are present, but not hooked yet)
 
 ## Home screen
 ![quizgpt home page](https://user-images.githubusercontent.com/34074169/213581506-53528fc3-17cf-402c-ac48-854dd634d02c.PNG)
