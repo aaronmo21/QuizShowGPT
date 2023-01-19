@@ -1,0 +1,80 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  td {
+    height: 40px;
+    border: 3px solid rgb(0, 0, 0);
+    padding: 15px;
+    cursor: pointer;
+    font-size: 2vw;
+    font-family: impact;
+    line-height: 1;
+  }
+  
+  tr{
+    background: linear-gradient(to top left, #000088, #0000ff);
+    color: #ddd;
+    border: 3px solid #000;
+  }
+  
+  .modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+  .modal-content {
+    background: linear-gradient(to top left, #000088, #0000ff);
+    margin: auto;
+    padding: 20px;
+    border: 1px solid rgb(0, 0, 0);
+    width: 80%;
+    max-width: 600px;
+    color: white;
+  }
+  
+  .modal-content h2 {
+    margin-top: 0;
+    color: white;
+  }
+  
+  button {
+    cursor: pointer;
+    border: none;
+    background-color: #94a195;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+  }
+  
+  button:hover {
+    background-color: #94a195;
+  }
+
+  
+  .game-screen {
+    position: relative;
+  }
+
+  .jeopardy-board {
+    position: absolute;
+    top: 350px;
+    left: 50%;
+  }

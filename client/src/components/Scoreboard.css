@@ -1,0 +1,40 @@
+.scoreboard-container {
+    position: fixed;
+    height: 30%;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .scoreboard {
+    width: 8%;
+    background-color: #000088;
+    opacity:0.1;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .active {
+    background-color: #000088;
+    opacity: 1.0;
+  }
+
+  .score {
+    font-size: 24px;
+    text-align: center;
+    color: #fefefe;
+    border: 1px solid rgb(255, 255, 255);
+  }
+
+  .player-banner {
+    font-size: 24px;
+    text-align: center;
+    color: #fefefe;
+    padding-top: 60%;
+    font-family: impact;
+  }
