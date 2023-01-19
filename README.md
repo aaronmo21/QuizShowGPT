@@ -1,4 +1,4 @@
-# QuizShowGPT
+# QuizShowGPT / JeopardyGPT
 
 ## QuizShowGPT is a game that fuses AI large language learning model with Jeopardy style quiz shows!
 
