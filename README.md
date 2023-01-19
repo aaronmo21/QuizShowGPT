@@ -9,8 +9,8 @@
 - The score and questions data is stored in the browser's window session so any accidental refresh will not result in a new call to OpenAI.
 - Make sure to click the current player's scoreboard so the score is added to the correct player.
 
-## Coming soon:
-- Refresh button that allows user to regenerate the board if the questions are bad
+## Coming soon
+- "Re-gen" button that allows user to regenerate the board if the questions are bad
 - Database functionality so save good questions boards
 - user feedback for good/bad game boards to improve results from ChatGPT
 
@@ -20,6 +20,10 @@
 - More vague categories may result in easier questions
 - Hyper-specific questions may result in less in-depth questions
 - Be aware that the idea of Jeopardy is to have increasingly difficult questions as the point value gets higher, but ChatGPT is hit-or-miss when it comes to scaling difficulty of the questions. ie the 1000 point question may be easier than the 200 point question.
+
+## Other notes / improvements
+- Consolidate styling
+- Improve file structure
 
 ## Home screen
 ![quizgpt home page](https://user-images.githubusercontent.com/34074169/213581506-53528fc3-17cf-402c-ac48-854dd634d02c.PNG)
