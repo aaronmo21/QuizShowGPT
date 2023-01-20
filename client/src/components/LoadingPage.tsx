@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react'
 import { Spinner, Box, Text } from 'grommet'
 
 export const LoadingPage: React.FC = () => {
-  const [showModal, setShowModal] = useState(true);
+  const [showModal, setShowModal] = useState(true)
 
   return (
     <>
@@ -13,5 +13,5 @@ export const LoadingPage: React.FC = () => {
         </Box>
       )}
     </>
-  );
-};
+  )
+}

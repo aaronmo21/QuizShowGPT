@@ -1,5 +1,5 @@
-import mongoose from "mongoose";
-import Question from "../models/Question";
+import mongoose from "mongoose"
+import Question from "../models/Question"
 
 const Schema = mongoose.Schema
 

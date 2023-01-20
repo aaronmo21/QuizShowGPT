@@ -1,17 +1,16 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react'
 import './Navbar.css'
-import { Button, Header, Nav } from 'grommet';
-import { grommet } from 'grommet/themes';
-import { Grommet, Box, Text } from 'grommet';
-import { useNavigate, useLocation } from 'react-router-dom';
+import { Button, Header, Nav } from 'grommet'
+import { grommet } from 'grommet/themes'
+import { Grommet, Box, Text } from 'grommet'
+import { useNavigate, useLocation } from 'react-router-dom'
 import { Player } from '../types'
 
 
 export const Navbar: React.FC<{players: Player[]}> = ({ players }) => {
   const [showFinishModal, setShowFinishModal] = useState(false)
   const [showHomeModal, setShowHomeModal] = useState(false)
-  const location = useLocation();
-
+  const location = useLocation()
   const navigate = useNavigate()
 
   const handleFinishRound = () => {

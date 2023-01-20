@@ -1,22 +1,22 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react'
 import './HomePage.css'
-import { useNavigate } from 'react-router-dom';
-import { Button, Main, Heading, TextInput, Text } from 'grommet';
+import { useNavigate } from 'react-router-dom'
+import { Button, Main, Heading, TextInput, Text } from 'grommet'
 import { Player } from '../types'
 
 export const HomePage: React.FC = () => {
-  const [categories, setCategories] = useState<string[]>([]);
-  const [players, setPlayers] = useState<Player[]>([]);
-  const [categoryInput, setCategoryInput] = useState('');
-  const [playerInput, setPlayerInput] = useState('');
-  const navigate = useNavigate();
+  const [categories, setCategories] = useState<string[]>([])
+  const [players, setPlayers] = useState<Player[]>([])
+  const [categoryInput, setCategoryInput] = useState('')
+  const [playerInput, setPlayerInput] = useState('')
+  const navigate = useNavigate()
 
   const handleAddCategory = () => {
     if (categories.length < 5) {
       setCategories([...categories, categoryInput]);
-      setCategoryInput('');
+      setCategoryInput('')
     }
-  };
+  }
 
   const handleAddPlayer = () => {
     if (players.length < 4) {
@@ -25,13 +25,13 @@ export const HomePage: React.FC = () => {
         score: 0
       }
       setPlayers([...players, p]);
-      setPlayerInput('');
+      setPlayerInput('')
     }
-  };
+  }
 
   const handleStartGame = () => {
     navigate('/round1', {state: {categories, players}})
-  };
+  }
 
   return (
     <div>
@@ -79,7 +79,7 @@ export const HomePage: React.FC = () => {
       </div>
       </Main>
     </div>
-  );
-};
+  )
+}
 
 const AppButton =  {backgroundColor: "yellow", color: 'black', border: 'none', padding: '1rem' }

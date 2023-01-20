@@ -1,12 +1,12 @@
 import express from "express"
 import mongoose from "mongoose"
-import * as dotenv from 'dotenv';
+import * as dotenv from 'dotenv'
 import {router} from './routes/game'
 import cors from 'cors'
-dotenv.config();
+dotenv.config()
 
 
-mongoose.set("strictQuery", false);
+mongoose.set("strictQuery", false)
 
 const PORT = 5000
 

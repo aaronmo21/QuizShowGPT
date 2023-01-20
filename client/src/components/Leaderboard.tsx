@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react'
 import { useNavigate, useLocation } from 'react-router-dom'
-import { Button, Heading, TextInput, Text } from 'grommet';
+import { Button, Heading, TextInput, Text } from 'grommet'
 import { Player } from '../types'
 import './Leaderboard.css'
 
@@ -10,8 +10,8 @@ export const Leaderboard: React.FC = () => {
   const navigate = useNavigate()
   const players: Player[] = location.state
   const [showContinueModal, setShowContinueModal] = useState(false)
-  const [categoryInput, setCategoryInput] = useState('');
-  const [categories, setCategories] = useState<string[]>([]);
+  const [categoryInput, setCategoryInput] = useState('')
+  const [categories, setCategories] = useState<string[]>([])
 
   const handleContinue = () => {
     navigate('/round2', {state: {players, categories}})

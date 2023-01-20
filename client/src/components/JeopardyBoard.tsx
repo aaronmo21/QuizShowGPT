@@ -1,14 +1,14 @@
-import React, { useState } from 'react';
-import './JeopardyBoard.css';
+import React, { useState } from 'react'
+import './JeopardyBoard.css'
 import { useLocation } from 'react-router-dom'
-import { Scoreboard } from './Scoreboard';
-import { LoadingPage } from './LoadingPage';
+import { Scoreboard } from './Scoreboard'
+import { LoadingPage } from './LoadingPage'
 import { Button } from 'grommet'
-import { Navbar } from './Navbar';
+import { Navbar } from './Navbar'
 import { Player, Question } from '../types'
 
 export const JeopardyBoard: React.FC = () => {
-  const location = useLocation();
+  const location = useLocation()
   const roundName: string = location.pathname
   const roundKey = roundName.replace('/', '')
   const [players, setPlayers] = useState<Player[]>(location.state.players)
@@ -50,7 +50,7 @@ export const JeopardyBoard: React.FC = () => {
     window.sessionStorage.setItem(roundName, JSON.stringify(data))
     setIsLoadingQuestions(false)
     setQuestions(data)
-  };
+  }
 
   //gets list of categories to display on top of board
   const uniqueCategories = questions.reduce((acc, obj) => {
@@ -59,19 +59,19 @@ export const JeopardyBoard: React.FC = () => {
       acc.push(category);
     }
     return acc;
-  }, [] as string[]);
+  }, [] as string[])
 
   // Open modal with answer when a question is clicked
   const handleClick = (question: Question) => {
     setCurrentQuestion(question);
     setShowModal(true);
-  };
+  }
 
   // Close modal when close button is clicked
   const handleClose = () => {
     setShowModal(false);
     setShowAnswer(false)
-  };
+  }
 
   //disable question and show modal
   const handleShowAnswer = () => {
@@ -85,7 +85,7 @@ export const JeopardyBoard: React.FC = () => {
       setQuestions(questions)
       window.sessionStorage.setItem(roundKey, JSON.stringify(questions))
     }
-  };
+  }
 
   //update user's score and cache in browser window
   const handleSubmitAnswer = (e: any) => {
@@ -102,7 +102,7 @@ export const JeopardyBoard: React.FC = () => {
     }
     setShowModal(false)
     setShowAnswer(false)
-  };
+  }
 
   //set current player
   const handleClickScoreboard = (name: string) => {

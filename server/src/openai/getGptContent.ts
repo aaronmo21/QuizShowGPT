@@ -1,7 +1,7 @@
 import OpenAI from 'openai-api'
-import { Question } from '../types';
-import dotenv from 'dotenv';
-dotenv.config();
+import { Question } from '../types'
+import dotenv from 'dotenv'
+dotenv.config()
 
 const openai = new OpenAI(process.env.OPENAI_SECRET_KEY || '')
 
@@ -26,7 +26,7 @@ export default async function getGptContent(userCategories: string[] | []): Prom
         bestOf: 1,
         n: 1,
         stream: false
-      });
+      })
 
       let pointValue = 0
 
@@ -59,7 +59,7 @@ export default async function getGptContent(userCategories: string[] | []): Prom
           answered: false
         })
         return acc;
-      }, [] as Question[]);
+      }, [] as Question[])
 
       console.log(finalQuestionsList);
       totalQuestionsList.push(...finalQuestionsList)

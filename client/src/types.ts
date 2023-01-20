@@ -1,12 +1,12 @@
 export interface Question {
-  category: string;
-  value: number;
-  question: string;
-  answer: string;
-  answered: boolean;
+  category: string,
+  value: number,
+  question: string,
+  answer: string,
+  answered: boolean
 }
   
 export interface Player {
-  name: string;
-  score: number;
+  name: string,
+  score: number,
 }

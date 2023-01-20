@@ -1,8 +1,8 @@
 import './App.css'
 import { HomePage }  from './components/HomePage'
-import { Routes, Route, BrowserRouter } from 'react-router-dom';
-import { JeopardyBoard } from './components/JeopardyBoard';
-import { Leaderboard } from './components/Leaderboard';
+import { Routes, Route, BrowserRouter } from 'react-router-dom'
+import { JeopardyBoard } from './components/JeopardyBoard'
+import { Leaderboard } from './components/Leaderboard'
 
 function App() {
 

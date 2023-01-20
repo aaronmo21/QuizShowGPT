@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 import './Scoreboard.css'
 import { Player } from '../types'
 

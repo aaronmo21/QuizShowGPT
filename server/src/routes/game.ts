@@ -1,5 +1,5 @@
-import { Router, Request, Response } from 'express';
-import getGptContent from '../openai/getGptContent';
+import { Router, Request, Response } from 'express'
+import getGptContent from '../openai/getGptContent'
 
 const router = Router()
 
@@ -12,8 +12,8 @@ router.post('/game', async (req: Request, res: Response) => {
     res.json(questions)
   }
   catch(err){
-    console.log("ERROR");
-    console.log(err);
+    console.log("ERROR")
+    console.log(err)
   }
 })
 
